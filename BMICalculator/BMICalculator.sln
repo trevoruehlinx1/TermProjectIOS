@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMICalculator", "BMICalculator\BMICalculator.csproj", "{FAC43273-C222-41DD-9AD4-22E573138351}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAC43273-C222-41DD-9AD4-22E573138351}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{FAC43273-C222-41DD-9AD4-22E573138351}.Debug|iPhone.Build.0 = Debug|iPhone
+		{FAC43273-C222-41DD-9AD4-22E573138351}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{FAC43273-C222-41DD-9AD4-22E573138351}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{FAC43273-C222-41DD-9AD4-22E573138351}.Release|iPhone.ActiveCfg = Release|iPhone
+		{FAC43273-C222-41DD-9AD4-22E573138351}.Release|iPhone.Build.0 = Release|iPhone
+		{FAC43273-C222-41DD-9AD4-22E573138351}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{FAC43273-C222-41DD-9AD4-22E573138351}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51858D9E-4884-459F-AB71-1FA8D672C469}
+	EndGlobalSection
+EndGlobal
