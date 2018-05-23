@@ -16,13 +16,31 @@ namespace BMICalculator
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel infoLabel { get; set; }
+        UIKit.UIImageView MaleBMIChart { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel MaleBMIOutputLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView MaleImage { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
-            if (infoLabel != null) {
-                infoLabel.Dispose ();
-                infoLabel = null;
+            if (MaleBMIChart != null) {
+                MaleBMIChart.Dispose ();
+                MaleBMIChart = null;
+            }
+
+            if (MaleBMIOutputLabel != null) {
+                MaleBMIOutputLabel.Dispose ();
+                MaleBMIOutputLabel = null;
+            }
+
+            if (MaleImage != null) {
+                MaleImage.Dispose ();
+                MaleImage = null;
             }
         }
     }

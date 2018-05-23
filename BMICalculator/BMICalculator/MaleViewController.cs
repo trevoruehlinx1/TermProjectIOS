@@ -13,12 +13,10 @@ namespace BMICalculator
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            infoLabel.Text = "view did load";
         }
 
 		public override void ViewDidAppear(bool animated)
 		{
-            infoLabel.Text = "view did appear";
 			base.ViewDidAppear(animated);
 		}
 	}

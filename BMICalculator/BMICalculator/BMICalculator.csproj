@@ -116,9 +116,14 @@
     <Compile Include="AboutViewController.designer.cs">
       <DependentUpon>AboutViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Calculator.cs" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\man.png" />
+    <BundleResource Include="Resources\Woman.png" />
+    <BundleResource Include="Resources\femaleBMIChart.jpg" />
+    <BundleResource Include="Resources\maleBMIChart.jpg" />
+    <BundleResource Include="Resources\stethascop.jpeg" />
+    <BundleResource Include="Resources\Screen Shot 2018-05-23 at 3.26.23 PM.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1336">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,13 +17,110 @@
                         <viewControllerLayoutGuide type="bottom" id="242"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="245">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <subviews/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2718" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" numberOfLines="3" usesAttributedText="YES">
+                                <rect key="frame" x="24" y="198" width="326" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Enter your height &amp; weight to see your Body Mass Index and go to the appropriate page to see where you are on the chart.">
+                                        <attributes>
+                                            <font key="NSFont" name="Arial-BoldMT" family="Arial" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2719" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" image="stethascop.jpeg">
+                                <rect key="frame" x="62" y="54" width="258" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="175" minValue="0" maxValue="350" id="4162" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="41" y="356" width="300" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="WeightSliderValueChanged:" destination="244" id="4165" eventType="editingChanged"/>
+                                    <action selector="WeightSliderValueChanged:" destination="244" id="4778" eventType="valueChanged"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4163" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" usesAttributedText="YES">
+                                <rect key="frame" x="150" y="306" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Weight">
+                                        <attributes>
+                                            <font key="NSFont" name="Arial-BoldMT" family="Arial" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4164" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" usesAttributedText="YES">
+                                <rect key="frame" x="134" y="405" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="0">
+                                        <attributes>
+                                            <font key="NSFont" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" size="25"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5813" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" usesAttributedText="YES">
+                                <rect key="frame" x="150" y="450" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Height">
+                                        <attributes>
+                                            <font key="NSFont" name="Arial-BoldMT" family="Arial" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="36" maxValue="84" id="5814" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="41" y="496" width="300" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="WeightSliderValueChanged:" destination="5816" id="5815" eventType="editingChanged"/>
+                                    <action selector="WeightSliderValueChanged:" destination="5816" id="5817" eventType="valueChanged"/>
+                                    <action selector="HeightSliderValueChanged:" destination="244" id="5819" eventType="valueChanged"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5818" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" usesAttributedText="YES">
+                                <rect key="frame" x="134" y="544" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="0">
+                                        <attributes>
+                                            <font key="NSFont" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" size="25"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                        </subviews>
                     </view>
                     <navigationItem title="Title" id="401" key="navigationItem"/>
-                    <connections/>
+                    <connections>
+                        <outlet property="WeightSlider" destination="4162" id="name-outlet-4162"/>
+                        <outlet property="weightSliderOutputLabel" destination="4164" id="name-outlet-4164"/>
+                        <outlet property="HeightSlider" destination="5814" id="name-outlet-5814"/>
+                        <outlet property="HeightSliderOutputLabel" destination="5818" id="name-outlet-5818"/>
+                    </connections>
                     <tabBarItem key="tabBarItem" id="1461" title="Home"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -36,28 +136,59 @@
                         <viewControllerLayoutGuide type="bottom" id="405"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="408">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2506" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="43" y="414" width="322" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8104" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="maleBMIChart.jpg">
+                                <rect key="frame" x="26" y="180" width="324" height="182"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9415" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="Screen Shot 2018-05-23 at 3.26.23 PM.png">
+                                <rect key="frame" x="138" y="36" width="98" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10719" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" usesAttributedText="YES">
+                                <rect key="frame" x="41" y="431" width="171" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Your BMI score is">
+                                        <attributes>
+                                            <font key="NSFont" name="Arial-BoldMT" family="Arial" size="20"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10721" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" usesAttributedText="YES">
+                                <rect key="frame" x="220" y="425" width="89" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="0">
+                                        <attributes>
+                                            <font key="NSFont" name="Arial-BoldMT" family="Arial" size="28"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                             </label>
                         </subviews>
                     </view>
                     <tabBarItem key="tabBarItem" title="Men" id="1809"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="infoLabel" destination="2506" id="name-outlet-2506"/>
+                        <outlet property="MaleBMIChart" destination="8104" id="name-outlet-8104"/>
+                        <outlet property="MaleImage" destination="9415" id="name-outlet-9415"/>
+                        <outlet property="MaleBMIOutputLabel" destination="10721" id="name-outlet-10721"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="409" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="396" y="-412"/>
+            <point key="canvasLocation" x="389" y="-411"/>
         </scene>
         <scene sceneID="413">
             <objects>
@@ -67,16 +198,58 @@
                         <viewControllerLayoutGuide type="bottom" id="412"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="415">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8323" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="femaleBMIChart.jpg">
+                                <rect key="frame" x="26" y="187" width="324" height="182"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="10500" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="Woman.png">
+                                <rect key="frame" x="138" y="36" width="98" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10722" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" usesAttributedText="YES">
+                                <rect key="frame" x="41" y="431" width="171" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Your BMI score is">
+                                        <attributes>
+                                            <font key="NSFont" name="Arial-BoldMT" family="Arial" size="20"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10723" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" usesAttributedText="YES">
+                                <rect key="frame" x="220" y="425" width="89" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="0">
+                                        <attributes>
+                                            <font key="NSFont" name="Arial-BoldMT" family="Arial" size="28"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                        </subviews>
                     </view>
                     <tabBarItem key="tabBarItem" title="Women" id="1929"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="FemaleImage" destination="10500" id="name-outlet-10500"/>
+                        <outlet property="FemaleBMIOutputLabel" destination="10723" id="name-outlet-10723"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="416" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="398" y="370"/>
+            <point key="canvasLocation" x="392" y="459"/>
         </scene>
         <scene sceneID="420">
             <objects>
@@ -86,9 +259,18 @@
                         <viewControllerLayoutGuide type="bottom" id="419"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="422">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10724" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="70" y="121" width="259" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                     </view>
                     <tabBarItem key="tabBarItem" title="About" id="2095"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -101,7 +283,7 @@
             <objects>
                 <tabBarController id="1336" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="1339">
-                        <rect key="frame" x="0.0" y="687" width="414" height="49"/>
+                        <rect key="frame" x="0.0" y="763" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
@@ -114,10 +296,14 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1340" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-598" y="-43"/>
+            <point key="canvasLocation" x="-593" y="-43"/>
         </scene>
     </scenes>
     <resources>
-        <image name="man.png" width="508" height="794"/>
+        <image name="Woman.png" width="199" height="295"/>
+        <image name="femaleBMIChart.jpg" width="930" height="650"/>
+        <image name="maleBMIChart.jpg" width="930" height="650"/>
+        <image name="stethascop.jpeg" width="300" height="168"/>
+        <image name="Screen Shot 2018-05-23 at 3.26.23 PM.png" width="434" height="628"/>
     </resources>
 </document>

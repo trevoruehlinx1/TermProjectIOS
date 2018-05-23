@@ -14,5 +14,8 @@ namespace BMICalculator
     [Register ("AboutViewController")]
     partial class AboutViewController
     {
+        void ReleaseDesignerOutlets ()
+        {
+        }
     }
 }

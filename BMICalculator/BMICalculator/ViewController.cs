@@ -22,5 +22,18 @@ namespace BMICalculator
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
         }
+
+        partial void WeightSliderValueChanged(UISlider sender)
+        {
+            int WSValue = (int)sender.Value;
+            weightSliderOutputLabel.Text = WSValue.ToString()+" lbs.";
+        }
+
+        partial void HeightSliderValueChanged(UISlider sender)
+        {
+            int ft = (int)sender.Value / 12;
+            int inchs = (int)sender.Value % 12;
+            HeightSliderOutputLabel.Text = ft.ToString() + " ft. " + inchs.ToString() + " in.";
+        }
     }
 }
