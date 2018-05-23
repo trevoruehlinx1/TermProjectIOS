@@ -104,6 +104,21 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="MaleViewController.cs" />
+    <Compile Include="MaleViewController.designer.cs">
+      <DependentUpon>MaleViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FemaleViewController.cs" />
+    <Compile Include="FemaleViewController.designer.cs">
+      <DependentUpon>FemaleViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboutViewController.cs" />
+    <Compile Include="AboutViewController.designer.cs">
+      <DependentUpon>AboutViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\man.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

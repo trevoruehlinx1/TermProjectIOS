@@ -1,0 +1,12 @@
+/Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/bin/iPhoneSimulator/Debug/BMICalculator.exe
+/Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/bin/iPhoneSimulator/Debug/BMICalculator.pdb
+/Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/ibtool/_BundleResourceWithLogicalName.items
+/Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/actool/_PartialAppManifest.items
+/Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/actool/_BundleResourceWithLogicalName.items
+/Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/coremlc/_PartialAppManifest.items
+/Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/coremlc/_BundleResourceWithLogicalName.items
+/Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/optimized/man.png
+/Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/optimized/
+/Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/BMICalculator.csproj.CoreCompileInputs.cache
+/Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/BMICalculator.exe
+/Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/BMICalculator.pdb
