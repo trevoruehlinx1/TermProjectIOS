@@ -27,6 +27,7 @@ namespace BMICalculator
         {
             int WSValue = (int)sender.Value;
             weightSliderOutputLabel.Text = WSValue.ToString()+" lbs.";
+            ((AppDelegate)(UIApplication.SharedApplication.Delegate)).weight = WSValue;
         }
 
         partial void HeightSliderValueChanged(UISlider sender)
@@ -34,6 +35,7 @@ namespace BMICalculator
             int ft = (int)sender.Value / 12;
             int inchs = (int)sender.Value % 12;
             HeightSliderOutputLabel.Text = ft.ToString() + " ft. " + inchs.ToString() + " in.";
+            ((AppDelegate)(UIApplication.SharedApplication.Delegate)).height = (int)sender.Value;
         }
     }
 }

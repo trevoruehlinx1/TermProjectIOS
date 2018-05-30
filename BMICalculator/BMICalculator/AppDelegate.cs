@@ -10,6 +10,8 @@ namespace BMICalculator
     {
         // class-level declarations
         public string cityName { get; set; }
+        public int weight {get;set;}
+        public int height {get;set;}
 
         public override UIWindow Window
         {
