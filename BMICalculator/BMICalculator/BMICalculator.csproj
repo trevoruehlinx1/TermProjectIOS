@@ -117,6 +117,11 @@
       <DependentUpon>AboutViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="Calculator.cs" />
+    <Compile Include="CityViewController.cs" />
+    <Compile Include="CityViewController.designer.cs">
+      <DependentUpon>CityViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CityPickerModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Woman.png" />

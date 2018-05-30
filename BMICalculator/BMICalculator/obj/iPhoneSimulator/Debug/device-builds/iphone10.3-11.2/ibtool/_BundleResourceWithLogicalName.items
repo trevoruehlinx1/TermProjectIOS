@@ -16,6 +16,11 @@
       <Optimize>false</Optimize>
       <OriginalItemSpec>obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/ibtool-link/LaunchScreen.storyboardc</OriginalItemSpec>
     </_BundleResourceWithLogicalName>
+    <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/ibtool-link/Main.storyboardc/10955-view-10956.nib">
+      <LogicalName>Main.storyboardc/10955-view-10956.nib</LogicalName>
+      <Optimize>false</Optimize>
+      <OriginalItemSpec>obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/ibtool-link/Main.storyboardc</OriginalItemSpec>
+    </_BundleResourceWithLogicalName>
     <_BundleResourceWithLogicalName Include="obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/ibtool-link/Main.storyboardc/244-view-245.nib">
       <LogicalName>Main.storyboardc/244-view-245.nib</LogicalName>
       <Optimize>false</Optimize>

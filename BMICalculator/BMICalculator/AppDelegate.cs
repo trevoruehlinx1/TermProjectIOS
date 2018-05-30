@@ -9,6 +9,7 @@ namespace BMICalculator
     public class AppDelegate : UIApplicationDelegate
     {
         // class-level declarations
+        public string cityName { get; set; }
 
         public override UIWindow Window
         {
