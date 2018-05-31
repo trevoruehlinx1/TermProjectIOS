@@ -14,8 +14,20 @@ namespace BMICalculator
     [Register ("AboutViewController")]
     partial class AboutViewController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton HealthInfoButton { get; set; }
+
+        [Action ("HealthInfoButton_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void HealthInfoButton_TouchUpInside (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
+            if (HealthInfoButton != null) {
+                HealthInfoButton.Dispose ();
+                HealthInfoButton = null;
+            }
         }
     }
 }
