@@ -43,5 +43,11 @@ namespace BMICalculator
 
 			base.ViewDidAppear(animated);
 		}
-	}
+
+        partial void MaleChartImageButton_TouchUpInside(UIButton sender)
+        {
+            string url = "https://www.weightlossresources.co.uk/img/i/ideal-weight-imperial-uk-men.jpg";
+            UIApplication.SharedApplication.OpenUrl(new NSUrl(url));
+        }
+    }
 }

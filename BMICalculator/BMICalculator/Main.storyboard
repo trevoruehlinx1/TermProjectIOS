@@ -162,6 +162,13 @@
                                     </fragment>
                                 </attributedString>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13407" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="26" y="180" width="324" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="MaleChartImageButton_TouchUpInside:" destination="407" id="13409" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <tabBarItem key="tabBarItem" title="Men" id="1809"/>
@@ -170,6 +177,7 @@
                         <outlet property="MaleBMIChart" destination="8104" id="name-outlet-8104"/>
                         <outlet property="MaleImage" destination="9415" id="name-outlet-9415"/>
                         <outlet property="MaleBMIOutputLabel" destination="10719" id="name-outlet-10719"/>
+                        <outlet property="MaleChartImageButton" destination="13407" id="name-outlet-13407"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="409" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -210,6 +218,13 @@
                                     </fragment>
                                 </attributedString>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="14091" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="16" y="187" width="334" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="FemaleChartButton_TouchUpInside:" destination="414" id="14092" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <tabBarItem key="tabBarItem" title="Women" id="1929"/>
@@ -217,6 +232,7 @@
                     <connections>
                         <outlet property="FemaleImage" destination="10500" id="name-outlet-10500"/>
                         <outlet property="FemaleBMIOutputLabel" destination="10722" id="name-outlet-10722"/>
+                        <outlet property="FemaleChartButton" destination="14091" id="name-outlet-14091"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="416" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -235,22 +251,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10724" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" numberOfLines="10">
-                                <rect key="frame" x="70" y="121" width="259" height="241"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10724" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" numberOfLines="10" usesAttributedText="YES">
+                                <rect key="frame" x="48" y="54" width="259" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <string key="text">Body Mass Index is a simple calculation using a person's height and weight. The formula is BMI = kg/m2 where kg is a person's weight in kilograms and m2 is their height in metres squared. A BMI of 25.0 or more is overweight, while the healthy range is 18.5 to 24.9. BMI applies to most adults 18-65 years.</string>
+                                <attributedString key="attributedText">
+                                    <fragment content="Body Mass Index is a simple calculation using a person's height and weight. The formula is BMI = kg/m2 where kg is a person's weight in kilograms and m2 is their height in metres squared. A BMI of 25.0 or more is overweight, while the healthy range is 18.5 to 24.9. BMI applies to most adults 18-65 years.">
+                                        <attributes>
+                                            <font key="NSFont" name="Arial-BoldMT" family="Arial" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13175" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="164" y="437" width="46" height="30"/>
+                                <rect key="frame" x="47" y="513" width="281" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="HealthInfoButton_TouchUpInside:" destination="421" id="13176" eventType="touchUpInside"/>
                                 </connections>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0" blue="1" alpha="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17" weight="heavy"/>
+                                <state key="normal" title="Local Health Related Infomation">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="14561" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="medical-symbol-clip-art-source-http-galleryhip-com--71468.jpg">
+                                <rect key="frame" x="132" y="377" width="111" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                     </view>
                     <tabBarItem key="tabBarItem" title="About" id="2095"/>
@@ -293,7 +323,7 @@
                     <view key="view" contentMode="scaleToFill" id="10956">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="1" blue="1" alpha="1"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="11065" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" usesAttributedText="YES">
                                 <rect key="frame" x="55" y="112" width="265" height="21"/>
@@ -321,11 +351,13 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Eugene">
                                         <attributes>
-                                            <font key="NSFont" name="HelveticaNeue" family="Helvetica Neue" size="20"/>
+                                            <color key="NSColor" colorSpace="calibratedRGB" red="0.83921568627450982" green="1" blue="0" alpha="1"/>
+                                            <font key="NSFont" name="Arial-BoldMT" family="Arial" size="20"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </textField>
                             <pickerView contentMode="scaleToFill" id="11304" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="28" y="325" width="320" height="162"/>
@@ -351,5 +383,6 @@
         <image name="maleBMIChart.jpg" width="930" height="650"/>
         <image name="stethascop.jpeg" width="300" height="168"/>
         <image name="Screen Shot 2018-05-23 at 3.26.23 PM.png" width="434" height="628"/>
+        <image name="medical-symbol-clip-art-source-http-galleryhip-com--71468.jpg" width="971" height="1024"/>
     </resources>
 </document>

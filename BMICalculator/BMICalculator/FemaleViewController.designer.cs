@@ -20,13 +20,26 @@ namespace BMICalculator
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton FemaleChartButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView FemaleImage { get; set; }
+
+        [Action ("FemaleChartButton_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void FemaleChartButton_TouchUpInside (UIKit.UIButton sender);
 
         void ReleaseDesignerOutlets ()
         {
             if (FemaleBMIOutputLabel != null) {
                 FemaleBMIOutputLabel.Dispose ();
                 FemaleBMIOutputLabel = null;
+            }
+
+            if (FemaleChartButton != null) {
+                FemaleChartButton.Dispose ();
+                FemaleChartButton = null;
             }
 
             if (FemaleImage != null) {

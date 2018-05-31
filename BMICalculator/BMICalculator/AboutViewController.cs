@@ -24,8 +24,12 @@ namespace BMICalculator
 
             if (cityName == "Eugene") { url = "http://www.peacehealth.org"; }
             else if (cityName == "Springfield") { url = "http://www.mckweb.com"; }
+            else if (cityName == "Albany") { url = "https://www.samhealth.org/"; }
             else if (cityName == "Salem") { url = "http://www.salemhealth.org"; }
             else if (cityName == "Portland") { url = "http://www.ohsu.edu"; }
+            else if (cityName == "Cottage Grove") { url = "https://www.peacehealth.org/phmg/cottage-grove/locations/cottage-grove"; }
+            else if (cityName == "Cresswell") { url = "https://www.peacehealth.org/phmg/cottage-grove/locations/creswell"; }
+
             else
                 url = "http://www.webmd.com";
                 

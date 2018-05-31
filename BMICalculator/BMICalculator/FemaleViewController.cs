@@ -41,5 +41,11 @@ namespace BMICalculator
 
             base.ViewDidAppear(animated);
         }
+
+        partial void FemaleChartButton_TouchUpInside(UIButton sender)
+        {
+            string url = "http://i0.wp.com/dietdatabase.com/wp-content/uploads/2016/05/ideal-weight-women.jpg";
+            UIApplication.SharedApplication.OpenUrl(new NSUrl(url));
+        }
     }
 }
