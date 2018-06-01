@@ -29,10 +29,21 @@ namespace BMICalculator
 
             return Message;
         }
-        public string GetMaleExtraMessage()
+        public string GetExtraMessage()
         {
-            //if(BMIScore < )
-            return "";
+            if (BMIScore <= 17)
+                Message = "SEVERLY UNDERWEIGHT";
+            else if (BMIScore >= 18 && BMIScore <=19)
+                Message = "UNDERWEIGHT";
+            else if (BMIScore > 19 && BMIScore <= 25)
+                Message = "OPTIMAL";
+            else if (BMIScore > 25 && BMIScore <= 30)
+                Message = "OVERWEIGHT";
+            else if (BMIScore > 30 && BMIScore <= 40)
+                Message = "OBESE";
+            else
+                Message = "SEVERLY OBESE";
+            return Message;
         }
     }
 }

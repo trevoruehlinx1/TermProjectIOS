@@ -13,6 +13,7 @@ namespace BMICalculator
         {
             Calculator calculator = new Calculator();
             FemaleBMIOutputLabel.Text = calculator.GetBMIScore();
+            ExtraMessageOutputLabel.Text = calculator.GetExtraMessage();
             base.ViewDidLoad();
         }
 
@@ -20,12 +21,19 @@ namespace BMICalculator
         {
             Calculator calculator = new Calculator();
             FemaleBMIOutputLabel.Text = calculator.GetBMIScore();
+            ExtraMessageOutputLabel.Text = calculator.GetExtraMessage();
             base.ViewDidAppear(animated);
         }
 
         partial void FemaleChartButton_TouchUpInside(UIButton sender)
         {
             string url = "http://i0.wp.com/dietdatabase.com/wp-content/uploads/2016/05/ideal-weight-women.jpg";
+            UIApplication.SharedApplication.OpenUrl(new NSUrl(url));
+        }
+
+        partial void Chart2BButton_TouchUpInside(UIButton sender)
+        {
+            string url = "http://realpropertyalpha.com/p/2018/04/bmi-chart-for-men-women-is-bmi-misleading-builtlean-regarding-bmi-male-chart.jpg";
             UIApplication.SharedApplication.OpenUrl(new NSUrl(url));
         }
     }

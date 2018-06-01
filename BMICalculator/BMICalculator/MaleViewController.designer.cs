@@ -24,6 +24,10 @@ namespace BMICalculator
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel ExtraMessageOutputLabel { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView MaleBMIChart { get; set; }
 
         [Outlet]
@@ -36,11 +40,11 @@ namespace BMICalculator
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel MaleExtraMessageOutputLabel { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView MaleImage { get; set; }
+
+        [Action ("Chart2Button_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void Chart2Button_TouchUpInside (UIKit.UIButton sender);
 
         [Action ("MaleChartImageButton_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -58,6 +62,11 @@ namespace BMICalculator
                 Chart2Button = null;
             }
 
+            if (ExtraMessageOutputLabel != null) {
+                ExtraMessageOutputLabel.Dispose ();
+                ExtraMessageOutputLabel = null;
+            }
+
             if (MaleBMIChart != null) {
                 MaleBMIChart.Dispose ();
                 MaleBMIChart = null;
@@ -71,11 +80,6 @@ namespace BMICalculator
             if (MaleChartImageButton != null) {
                 MaleChartImageButton.Dispose ();
                 MaleChartImageButton = null;
-            }
-
-            if (MaleExtraMessageOutputLabel != null) {
-                MaleExtraMessageOutputLabel.Dispose ();
-                MaleExtraMessageOutputLabel = null;
             }
 
             if (MaleImage != null) {

@@ -11,3 +11,5 @@
 /Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/BMICalculator.csproj.CoreCompileInputs.cache
 /Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/BMICalculator.exe
 /Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/BMICalculator.pdb
+/Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/optimized/WOMAN2.png
+/Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/optimized/MAN2.png
