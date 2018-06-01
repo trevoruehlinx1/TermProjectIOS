@@ -130,6 +130,7 @@
     <BundleResource Include="Resources\stethascop.jpeg" />
     <BundleResource Include="Resources\Screen Shot 2018-05-23 at 3.26.23 PM.png" />
     <BundleResource Include="Resources\medical-symbol-clip-art-source-http-galleryhip-com--71468.jpg" />
+    <BundleResource Include="Resources\MaleChart2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

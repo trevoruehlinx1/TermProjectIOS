@@ -12,35 +12,16 @@ namespace BMICalculator
 
         public override void ViewDidLoad()
         {
-            decimal weight = ((AppDelegate)(UIApplication.SharedApplication.Delegate)).weight;
-            decimal height = ((AppDelegate)(UIApplication.SharedApplication.Delegate)).height;
-
-            if (weight > 0)
-            {
-                decimal BMIScore = (weight / (height * height)) * 703;
-                BMIScore = decimal.Round(BMIScore, 2);
-                MaleBMIOutputLabel.Text = "Your BMI Score is " + BMIScore.ToString();
-            }
-            else
-                MaleBMIOutputLabel.Text = "You must enter your height and weight";
-                
-
+            Calculator calculator = new Calculator();
+            MaleBMIOutputLabel.Text = calculator.GetBMIScore();
+            MaleExtraMessageOutputLabel.Text = "";
             base.ViewDidLoad();
         }
 
 		public override void ViewDidAppear(bool animated)
 		{
-            decimal weight = ((AppDelegate)(UIApplication.SharedApplication.Delegate)).weight;
-            decimal height = ((AppDelegate)(UIApplication.SharedApplication.Delegate)).height;
-            if (weight > 0)
-            {
-                decimal BMIScore = (weight / (height * height)) * 703;
-                BMIScore = decimal.Round(BMIScore, 2);
-                MaleBMIOutputLabel.Text = "Your BMI Score is " + BMIScore.ToString();
-            }
-            else
-                MaleBMIOutputLabel.Text = "You must enter your height and weight";
-
+            Calculator calculator = new Calculator();
+            MaleBMIOutputLabel.Text = calculator.GetBMIScore();
 			base.ViewDidAppear(animated);
 		}
 

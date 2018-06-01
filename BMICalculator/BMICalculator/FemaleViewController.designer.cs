@@ -16,6 +16,14 @@ namespace BMICalculator
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView Chart2 { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton Chart2BButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel FemaleBMIOutputLabel { get; set; }
 
         [Outlet]
@@ -32,6 +40,16 @@ namespace BMICalculator
 
         void ReleaseDesignerOutlets ()
         {
+            if (Chart2 != null) {
+                Chart2.Dispose ();
+                Chart2 = null;
+            }
+
+            if (Chart2BButton != null) {
+                Chart2BButton.Dispose ();
+                Chart2BButton = null;
+            }
+
             if (FemaleBMIOutputLabel != null) {
                 FemaleBMIOutputLabel.Dispose ();
                 FemaleBMIOutputLabel = null;

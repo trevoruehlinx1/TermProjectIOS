@@ -141,7 +141,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8104" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="maleBMIChart.jpg">
-                                <rect key="frame" x="26" y="180" width="324" height="231"/>
+                                <rect key="frame" x="16" y="510" width="347" height="231"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9415" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="Screen Shot 2018-05-23 at 3.26.23 PM.png">
@@ -149,7 +149,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10719" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" usesAttributedText="YES" numberOfLines="2">
-                                <rect key="frame" x="41" y="431" width="302" height="63"/>
+                                <rect key="frame" x="41" y="423" width="302" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -162,11 +162,36 @@
                                     </fragment>
                                 </attributedString>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="15251" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" usesAttributedText="YES">
+                                <rect key="frame" x="20" y="470" width="343" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" name="Arial-BoldMT" family="Arial" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13407" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="26" y="180" width="324" height="231"/>
+                                <rect key="frame" x="16" y="510" width="343" height="231"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="MaleChartImageButton_TouchUpInside:" destination="407" id="13409" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="16196" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="MaleChart2.jpg">
+                                <rect key="frame" x="20" y="172" width="338" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="16197" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="172" width="338" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="MaleChartImageButton_TouchUpInside:" destination="16199" id="16198" eventType="touchUpInside"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -177,7 +202,10 @@
                         <outlet property="MaleBMIChart" destination="8104" id="name-outlet-8104"/>
                         <outlet property="MaleImage" destination="9415" id="name-outlet-9415"/>
                         <outlet property="MaleBMIOutputLabel" destination="10719" id="name-outlet-10719"/>
+                        <outlet property="MaleExtraMessageOutputLabel" destination="15251" id="name-outlet-15251"/>
                         <outlet property="MaleChartImageButton" destination="13407" id="name-outlet-13407"/>
+                        <outlet property="Chart2" destination="16196" id="name-outlet-16196"/>
+                        <outlet property="Chart2Button" destination="16197" id="name-outlet-16197"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="409" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -197,7 +225,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8323" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="femaleBMIChart.jpg">
-                                <rect key="frame" x="26" y="187" width="324" height="228"/>
+                                <rect key="frame" x="16" y="515" width="347" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="10500" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="Woman.png">
@@ -205,7 +233,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10722" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" usesAttributedText="YES" numberOfLines="2">
-                                <rect key="frame" x="41" y="431" width="300" height="63"/>
+                                <rect key="frame" x="41" y="431" width="300" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -218,11 +246,36 @@
                                     </fragment>
                                 </attributedString>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="15272" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" usesAttributedText="YES">
+                                <rect key="frame" x="20" y="475" width="343" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" name="Arial-BoldMT" family="Arial" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="14091" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="16" y="187" width="334" height="228"/>
+                                <rect key="frame" x="16" y="515" width="342" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="FemaleChartButton_TouchUpInside:" destination="414" id="14092" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="16195" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="MaleChart2.jpg">
+                                <rect key="frame" x="20" y="172" width="338" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="16200" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="172" width="338" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="MaleChartImageButton_TouchUpInside:" destination="16202" id="16201" eventType="touchUpInside"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -233,6 +286,8 @@
                         <outlet property="FemaleImage" destination="10500" id="name-outlet-10500"/>
                         <outlet property="FemaleBMIOutputLabel" destination="10722" id="name-outlet-10722"/>
                         <outlet property="FemaleChartButton" destination="14091" id="name-outlet-14091"/>
+                        <outlet property="Chart2" destination="16195" id="name-outlet-16195"/>
+                        <outlet property="Chart2BButton" destination="16200" id="name-outlet-16200"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="416" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -384,5 +439,6 @@
         <image name="stethascop.jpeg" width="300" height="168"/>
         <image name="Screen Shot 2018-05-23 at 3.26.23 PM.png" width="434" height="628"/>
         <image name="medical-symbol-clip-art-source-http-galleryhip-com--71468.jpg" width="971" height="1024"/>
+        <image name="MaleChart2.jpg" width="600" height="415"/>
     </resources>
 </document>
