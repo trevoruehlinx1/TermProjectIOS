@@ -21,8 +21,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2718" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="4" usesAttributedText="YES" misplaced="YES">
-                                <rect key="frame" x="41" y="217" width="293" height="52"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2718" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="4" usesAttributedText="YES" fixedFrame="YES">
+                                <rect key="frame" x="41" y="324" width="293" height="52"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <attributedString key="attributedText">
@@ -33,19 +33,22 @@
                                         </attributes>
                                     </fragment>
                                 </attributedString>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2719" translatesAutoresizingMaskIntoConstraints="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES" image="stethascop.jpeg">
-                                <rect key="frame" x="40.5" y="28" width="300" height="168"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2719" translatesAutoresizingMaskIntoConstraints="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES" image="stethascop.jpeg" fixedFrame="YES">
+                                <rect key="frame" x="40" y="56" width="300" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="175" minValue="0" maxValue="350" id="4162" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" ambiguous="YES">
-                                <rect key="frame" x="41" y="330" width="300" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="175" minValue="0" maxValue="350" id="4162" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="40" y="449" width="300" height="31"/>
                                 <connections>
                                     <action selector="WeightSliderValueChanged:" destination="244" id="4165" eventType="editingChanged"/>
                                     <action selector="WeightSliderValueChanged:" destination="244" id="4778" eventType="valueChanged"/>
                                 </connections>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4163" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
-                                <rect key="frame" x="159.5" y="285.5" width="56.5" height="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4163" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" fixedFrame="YES">
+                                <rect key="frame" x="156" y="405" width="70" height="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <attributedString key="attributedText">
@@ -56,9 +59,10 @@
                                         </attributes>
                                     </fragment>
                                 </attributedString>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4164" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
-                                <rect key="frame" x="185.5" y="379" width="12" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4164" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" fixedFrame="YES">
+                                <rect key="frame" x="185" y="488" width="12" height="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <attributedString key="attributedText">
@@ -69,9 +73,10 @@
                                         </attributes>
                                     </fragment>
                                 </attributedString>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5813" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
-                                <rect key="frame" x="161" y="429.5" width="53" height="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5813" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" fixedFrame="YES">
+                                <rect key="frame" x="164" y="533" width="53" height="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <attributedString key="attributedText">
@@ -82,17 +87,19 @@
                                         </attributes>
                                     </fragment>
                                 </attributedString>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="36" maxValue="84" id="5814" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" ambiguous="YES">
-                                <rect key="frame" x="41" y="470" width="300" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="36" maxValue="84" id="5814" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="41" y="565" width="300" height="31"/>
                                 <connections>
                                     <action selector="WeightSliderValueChanged:" destination="5816" id="5815" eventType="editingChanged"/>
                                     <action selector="WeightSliderValueChanged:" destination="5816" id="5817" eventType="valueChanged"/>
                                     <action selector="HeightSliderValueChanged:" destination="244" id="5819" eventType="valueChanged"/>
                                 </connections>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5818" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
-                                <rect key="frame" x="185.5" y="518" width="12" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5818" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" fixedFrame="YES">
+                                <rect key="frame" x="185" y="616" width="12" height="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <attributedString key="attributedText">
@@ -103,90 +110,9 @@
                                         </attributes>
                                     </fragment>
                                 </attributedString>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </label>
                         </subviews>
-                        <constraints>
-                            <constraint id="18300" firstItem="245" firstAttribute="centerY" secondItem="2719" secondAttribute="centerY" constant="294"/>
-                            <constraint id="18301" firstItem="2719" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="3"/>
-                            <constraint id="18310" firstItem="4163" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="267"/>
-                            <constraint id="18311" firstItem="4163" firstAttribute="centerX" secondItem="245" secondAttribute="centerX"/>
-                            <constraint id="18312" firstItem="4162" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="317"/>
-                            <constraint id="18313" firstItem="4162" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="3"/>
-                            <constraint id="18314" firstItem="4164" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="366"/>
-                            <constraint id="18315" firstItem="4164" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="4"/>
-                            <constraint id="18316" firstItem="5813" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="411"/>
-                            <constraint id="18317" firstItem="5813" firstAttribute="centerX" secondItem="245" secondAttribute="centerX"/>
-                            <constraint id="18318" firstItem="5814" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="457"/>
-                            <constraint id="18319" firstItem="5814" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="3"/>
-                            <constraint id="18320" firstItem="5818" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="505"/>
-                            <constraint id="18321" firstItem="5818" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="4"/>
-                            <constraint id="18806" firstItem="2718" firstAttribute="centerY" secondItem="2719" secondAttribute="bottom" constant="47"/>
-                            <constraint id="18807" firstItem="2718" firstAttribute="centerX" secondItem="245" secondAttribute="centerX"/>
-                            <constraint id="18808" firstItem="2718" firstAttribute="top" secondItem="2719" secondAttribute="bottom" constant="21"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="18300"/>
-                                <exclude reference="18301"/>
-                                <exclude reference="18310"/>
-                                <exclude reference="18312"/>
-                                <exclude reference="18314"/>
-                                <exclude reference="18316"/>
-                                <exclude reference="18318"/>
-                                <exclude reference="18320"/>
-                                <exclude reference="18311"/>
-                                <exclude reference="18313"/>
-                                <exclude reference="18315"/>
-                                <exclude reference="18317"/>
-                                <exclude reference="18319"/>
-                                <exclude reference="18321"/>
-                                <exclude reference="18806"/>
-                                <exclude reference="18807"/>
-                                <exclude reference="18808"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="18300"/>
-                                <include reference="18301"/>
-                                <include reference="18310"/>
-                                <include reference="18312"/>
-                                <include reference="18314"/>
-                                <include reference="18316"/>
-                                <include reference="18318"/>
-                                <include reference="18320"/>
-                                <include reference="18311"/>
-                                <include reference="18313"/>
-                                <include reference="18315"/>
-                                <include reference="18317"/>
-                                <include reference="18319"/>
-                                <include reference="18321"/>
-                                <include reference="18806"/>
-                                <include reference="18807"/>
-                                <include reference="18808"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=regular">
-                            <mask key="constraints">
-                                <include reference="18300"/>
-                                <include reference="18301"/>
-                                <include reference="18310"/>
-                                <include reference="18312"/>
-                                <include reference="18314"/>
-                                <include reference="18316"/>
-                                <include reference="18318"/>
-                                <include reference="18320"/>
-                                <include reference="18311"/>
-                                <include reference="18313"/>
-                                <include reference="18315"/>
-                                <include reference="18317"/>
-                                <include reference="18319"/>
-                                <include reference="18321"/>
-                                <include reference="18806"/>
-                                <include reference="18807"/>
-                                <include reference="18808"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem title="Title" id="401" key="navigationItem"/>
                     <connections>
