@@ -157,10 +157,11 @@
                                 <rect key="frame" x="16" y="510" width="347" height="231"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9415" translatesAutoresizingMaskIntoConstraints="NO" image="MAN2.png" misplaced="YES">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9415" translatesAutoresizingMaskIntoConstraints="NO" image="MAN2.png" fixedFrame="YES">
                                 <rect key="frame" x="140" y="36" width="98" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10719" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" numberOfLines="2" misplaced="YES">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10719" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" numberOfLines="2" fixedFrame="YES">
                                 <rect key="frame" x="41" y="413" width="302" height="49"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -172,8 +173,9 @@
                                         </attributes>
                                     </fragment>
                                 </attributedString>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="15251" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" numberOfLines="2" misplaced="YES">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="15251" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" numberOfLines="2" fixedFrame="YES">
                                 <rect key="frame" x="20" y="470" width="343" height="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -185,16 +187,19 @@
                                         </attributes>
                                     </fragment>
                                 </attributedString>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="16196" translatesAutoresizingMaskIntoConstraints="NO" image="MaleChart2.jpg" misplaced="YES">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="16196" translatesAutoresizingMaskIntoConstraints="NO" image="MaleChart2.jpg" fixedFrame="YES">
                                 <rect key="frame" x="20" y="172" width="338" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="16197" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="16197" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="18" y="172" width="338" height="223"/>
                                 <connections>
                                     <action selector="MaleChartImageButton_TouchUpInside:" destination="16199" id="16198" eventType="touchUpInside"/>
                                     <action selector="Chart2Button_TouchUpInside:" destination="407" id="16472" eventType="touchUpInside"/>
                                 </connections>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13407" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="16" y="510" width="343" height="231"/>
@@ -204,18 +209,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <constraints>
-                            <constraint id="20759" firstItem="408" firstAttribute="centerY" secondItem="9415" secondAttribute="centerY" constant="306"/>
-                            <constraint id="20760" firstItem="9415" firstAttribute="centerX" secondItem="408" secondAttribute="centerX" constant="1.5"/>
-                            <constraint id="20761" firstItem="16196" firstAttribute="centerY" secondItem="9415" secondAttribute="top" constant="247"/>
-                            <constraint id="20762" firstItem="16196" firstAttribute="centerX" secondItem="408" secondAttribute="centerX" constant="1"/>
-                            <constraint id="20763" firstItem="16197" firstAttribute="centerY" secondItem="9415" secondAttribute="top" constant="247"/>
-                            <constraint id="20764" firstItem="16197" firstAttribute="centerX" secondItem="408" secondAttribute="centerX"/>
-                            <constraint id="20765" firstItem="10719" firstAttribute="centerY" secondItem="9415" secondAttribute="top" constant="401"/>
-                            <constraint id="20766" firstItem="10719" firstAttribute="centerX" secondItem="408" secondAttribute="centerX" constant="4"/>
-                            <constraint id="20767" firstItem="15251" firstAttribute="centerY" secondItem="9415" secondAttribute="top" constant="450"/>
-                            <constraint id="20768" firstItem="15251" firstAttribute="centerX" secondItem="408" secondAttribute="centerX" constant="4"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Men" id="1809"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
