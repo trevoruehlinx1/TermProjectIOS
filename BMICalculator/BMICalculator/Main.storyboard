@@ -22,11 +22,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2718" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="4" usesAttributedText="YES">
-                                <rect key="frame" x="51" y="311" width="273" height="38"/>
+                                <rect key="frame" x="98" y="320.5" width="179.5" height="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Enter your height &amp; weight to and got to the appropriate page.">
+                                    <fragment content="Enter Height &amp; Weight">
                                         <attributes>
                                             <font key="NSFont" name="Arial-BoldMT" family="Arial" size="17"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
@@ -38,7 +38,7 @@
                                 <rect key="frame" x="39.5" y="56" width="300" height="168"/>
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="175" minValue="0" maxValue="350" id="4162" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="39" y="449" width="301" height="31"/>
+                                <rect key="frame" x="0.0" y="444" width="379" height="31"/>
                                 <connections>
                                     <action selector="WeightSliderValueChanged:" destination="244" id="4165" eventType="editingChanged"/>
                                     <action selector="WeightSliderValueChanged:" destination="244" id="4778" eventType="valueChanged"/>
@@ -84,7 +84,7 @@
                                 </attributedString>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="36" maxValue="84" id="5814" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="40" y="565" width="301" height="31"/>
+                                <rect key="frame" x="1" y="565" width="379" height="31"/>
                                 <connections>
                                     <action selector="WeightSliderValueChanged:" destination="5816" id="5815" eventType="editingChanged"/>
                                     <action selector="WeightSliderValueChanged:" destination="5816" id="5817" eventType="valueChanged"/>
@@ -106,26 +106,135 @@
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint id="20443" firstItem="2719" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="2"/>
-                            <constraint id="20444" firstItem="245" firstAttribute="centerY" secondItem="2719" secondAttribute="centerY" constant="266"/>
-                            <constraint id="20447" firstItem="2718" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="274"/>
-                            <constraint id="20448" firstItem="245" firstAttribute="centerX" secondItem="2718" secondAttribute="centerX"/>
-                            <constraint id="20449" firstItem="2718" firstAttribute="leading" secondItem="245" secondAttribute="leadingMargin" constant="35"/>
-                            <constraint id="20451" firstItem="4163" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="358"/>
-                            <constraint id="20452" firstItem="4163" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="3"/>
-                            <constraint id="20453" firstItem="4162" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="408"/>
-                            <constraint id="20454" firstItem="4162" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="2"/>
-                            <constraint id="20455" firstItem="245" firstAttribute="trailingMargin" secondItem="4162" secondAttribute="trailing" constant="21"/>
-                            <constraint id="20456" firstItem="4164" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="447"/>
-                            <constraint id="20457" firstItem="4164" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="3"/>
-                            <constraint id="20458" firstItem="5813" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="486"/>
-                            <constraint id="20459" firstItem="5813" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="3"/>
-                            <constraint id="20460" firstItem="5814" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="524"/>
-                            <constraint id="20461" firstItem="5814" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="3"/>
-                            <constraint id="20462" firstItem="245" firstAttribute="trailingMargin" secondItem="5814" secondAttribute="trailing" constant="20"/>
-                            <constraint id="20463" firstItem="5818" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="575"/>
-                            <constraint id="20464" firstItem="5818" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="3"/>
+                            <constraint id="21677" firstItem="2719" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="2"/>
+                            <constraint id="21678" firstItem="245" firstAttribute="centerY" secondItem="2719" secondAttribute="centerY" constant="266"/>
+                            <constraint id="21679" firstItem="2718" firstAttribute="centerY" secondItem="2719" secondAttribute="bottom" constant="106"/>
+                            <constraint id="21680" firstItem="2718" firstAttribute="centerX" secondItem="245" secondAttribute="centerX"/>
+                            <constraint id="21681" firstItem="4163" firstAttribute="centerY" secondItem="2719" secondAttribute="bottom" constant="190"/>
+                            <constraint id="21682" firstItem="4163" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="3"/>
+                            <constraint id="21685" firstItem="4164" firstAttribute="centerY" secondItem="2719" secondAttribute="bottom" constant="279"/>
+                            <constraint id="21686" firstItem="4164" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="3"/>
+                            <constraint id="21687" firstItem="5813" firstAttribute="centerY" secondItem="2719" secondAttribute="bottom" constant="318"/>
+                            <constraint id="21688" firstItem="5813" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="3"/>
+                            <constraint id="21691" firstItem="5818" firstAttribute="centerY" secondItem="2719" secondAttribute="bottom" constant="407"/>
+                            <constraint id="21692" firstItem="5818" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="3"/>
+                            <constraint id="21745" firstItem="245" firstAttribute="centerY" secondItem="2719" secondAttribute="centerY" constant="79"/>
+                            <constraint id="21746" firstItem="2719" firstAttribute="centerX" secondItem="245" secondAttribute="centerX"/>
+                            <constraint id="21747" firstItem="2718" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="175"/>
+                            <constraint id="21748" firstItem="2718" firstAttribute="centerX" secondItem="245" secondAttribute="centerX"/>
+                            <constraint id="21749" firstItem="4163" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="45"/>
+                            <constraint id="21750" firstItem="245" firstAttribute="centerX" secondItem="4163" secondAttribute="centerX" constant="263"/>
+                            <constraint id="21753" firstItem="4164" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="117"/>
+                            <constraint id="21754" firstItem="245" firstAttribute="centerX" secondItem="4164" secondAttribute="centerX" constant="263"/>
+                            <constraint id="21755" firstItem="5813" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="45"/>
+                            <constraint id="21756" firstItem="5813" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="272"/>
+                            <constraint id="21759" firstItem="5818" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="117"/>
+                            <constraint id="21760" firstItem="5818" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="272"/>
+                            <constraint id="22747" firstItem="4162" firstAttribute="centerY" secondItem="2719" secondAttribute="bottom" constant="235"/>
+                            <constraint id="22748" firstItem="4162" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="2"/>
+                            <constraint id="23715" firstItem="4162" firstAttribute="width" secondItem="245" secondAttribute="width"/>
+                            <constraint id="24039" firstItem="5814" firstAttribute="centerY" secondItem="2719" secondAttribute="bottom" constant="356"/>
+                            <constraint id="24040" firstItem="5814" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="3"/>
+                            <constraint id="24042" firstItem="5814" firstAttribute="width" secondItem="245" secondAttribute="width"/>
+                            <constraint id="24372" firstItem="4162" firstAttribute="centerY" secondItem="2719" secondAttribute="top" constant="215"/>
+                            <constraint id="24373" firstItem="4162" firstAttribute="centerX" secondItem="245" secondAttribute="centerX"/>
+                            <constraint id="24706" firstItem="5814" firstAttribute="centerY" secondItem="2719" secondAttribute="bottom" constant="131"/>
+                            <constraint id="24707" firstItem="5814" firstAttribute="centerX" secondItem="245" secondAttribute="centerX"/>
+                            <constraint id="24710" firstItem="245" firstAttribute="bottom" secondItem="5814" secondAttribute="bottom" constant="72"/>
+                            <constraint id="24712" firstItem="5814" firstAttribute="width" secondItem="245" secondAttribute="width"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="21677"/>
+                                <exclude reference="21678"/>
+                                <exclude reference="21679"/>
+                                <exclude reference="21680"/>
+                                <exclude reference="21681"/>
+                                <exclude reference="21682"/>
+                                <exclude reference="21685"/>
+                                <exclude reference="21686"/>
+                                <exclude reference="21687"/>
+                                <exclude reference="21688"/>
+                                <exclude reference="21691"/>
+                                <exclude reference="21692"/>
+                                <exclude reference="21745"/>
+                                <exclude reference="21746"/>
+                                <exclude reference="21747"/>
+                                <exclude reference="21748"/>
+                                <exclude reference="21749"/>
+                                <exclude reference="21750"/>
+                                <exclude reference="21753"/>
+                                <exclude reference="21754"/>
+                                <exclude reference="21755"/>
+                                <exclude reference="21756"/>
+                                <exclude reference="21759"/>
+                                <exclude reference="21760"/>
+                                <exclude reference="22747"/>
+                                <exclude reference="22748"/>
+                                <exclude reference="24039"/>
+                                <exclude reference="24040"/>
+                                <exclude reference="24042"/>
+                                <exclude reference="24372"/>
+                                <exclude reference="24373"/>
+                                <exclude reference="24706"/>
+                                <exclude reference="24707"/>
+                                <exclude reference="24710"/>
+                                <exclude reference="24712"/>
+                                <exclude reference="23715"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="21677"/>
+                                <include reference="21678"/>
+                                <include reference="21679"/>
+                                <include reference="21680"/>
+                                <include reference="21681"/>
+                                <include reference="21682"/>
+                                <include reference="21685"/>
+                                <include reference="21686"/>
+                                <include reference="21687"/>
+                                <include reference="21688"/>
+                                <include reference="21691"/>
+                                <include reference="21692"/>
+                                <include reference="22747"/>
+                                <include reference="22748"/>
+                                <include reference="23715"/>
+                                <include reference="24039"/>
+                                <include reference="24040"/>
+                                <include reference="24042"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="21692"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="21692"/>
+                                <exclude reference="21691"/>
+                                <include reference="21745"/>
+                                <include reference="21746"/>
+                                <include reference="21747"/>
+                                <include reference="21748"/>
+                                <include reference="21749"/>
+                                <include reference="21750"/>
+                                <include reference="21753"/>
+                                <include reference="21754"/>
+                                <include reference="21755"/>
+                                <include reference="21756"/>
+                                <include reference="21759"/>
+                                <include reference="21760"/>
+                                <include reference="24372"/>
+                                <include reference="24373"/>
+                                <include reference="24706"/>
+                                <include reference="24707"/>
+                                <include reference="24710"/>
+                                <include reference="24712"/>
+                                <include reference="23715"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem title="Title" id="401" key="navigationItem"/>
                     <connections>
@@ -153,16 +262,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8104" translatesAutoresizingMaskIntoConstraints="NO" image="maleBMIChart.jpg" fixedFrame="YES">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8104" translatesAutoresizingMaskIntoConstraints="NO" image="maleBMIChart.jpg" misplaced="YES">
                                 <rect key="frame" x="16" y="510" width="347" height="231"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9415" translatesAutoresizingMaskIntoConstraints="NO" image="MAN2.png" fixedFrame="YES">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9415" translatesAutoresizingMaskIntoConstraints="NO" image="MAN2.png">
                                 <rect key="frame" x="140" y="36" width="98" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10719" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" numberOfLines="2" fixedFrame="YES">
-                                <rect key="frame" x="41" y="413" width="302" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10719" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" numberOfLines="2" misplaced="YES">
+                                <rect key="frame" x="41" y="413" width="302" height="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <attributedString key="attributedText">
@@ -173,10 +280,9 @@
                                         </attributes>
                                     </fragment>
                                 </attributedString>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="15251" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" numberOfLines="2" fixedFrame="YES">
-                                <rect key="frame" x="20" y="470" width="343" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="15251" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" numberOfLines="2" misplaced="YES">
+                                <rect key="frame" x="93" y="462" width="198" height="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <attributedString key="attributedText">
@@ -187,28 +293,85 @@
                                         </attributes>
                                     </fragment>
                                 </attributedString>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="16196" translatesAutoresizingMaskIntoConstraints="NO" image="MaleChart2.jpg" fixedFrame="YES">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="16196" translatesAutoresizingMaskIntoConstraints="NO" image="MaleChart2.jpg">
                                 <rect key="frame" x="20" y="172" width="338" height="223"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="16197" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="16197" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
                                 <rect key="frame" x="18" y="172" width="338" height="223"/>
                                 <connections>
                                     <action selector="MaleChartImageButton_TouchUpInside:" destination="16199" id="16198" eventType="touchUpInside"/>
                                     <action selector="Chart2Button_TouchUpInside:" destination="407" id="16472" eventType="touchUpInside"/>
                                 </connections>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13407" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="16" y="510" width="343" height="231"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="MaleChartImageButton_TouchUpInside:" destination="407" id="13409" eventType="touchUpInside"/>
                                 </connections>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
                         </subviews>
+                        <constraints>
+                            <constraint id="26073" firstItem="9415" firstAttribute="centerX" secondItem="408" secondAttribute="centerX" constant="1"/>
+                            <constraint id="26074" firstItem="408" firstAttribute="centerY" secondItem="9415" secondAttribute="centerY" constant="306"/>
+                            <constraint id="26079" firstItem="10719" firstAttribute="centerY" secondItem="9415" secondAttribute="bottom" constant="260"/>
+                            <constraint id="26080" firstItem="10719" firstAttribute="centerX" secondItem="408" secondAttribute="centerX" constant="4"/>
+                            <constraint id="26081" firstItem="15251" firstAttribute="centerY" secondItem="9415" secondAttribute="bottom" constant="309"/>
+                            <constraint id="26083" firstItem="15251" firstAttribute="centerX" secondItem="408" secondAttribute="centerX" constant="4"/>
+                            <constraint id="26084" firstItem="8104" firstAttribute="centerY" secondItem="9415" secondAttribute="bottom" constant="461"/>
+                            <constraint id="26085" firstItem="8104" firstAttribute="centerX" secondItem="408" secondAttribute="centerX" constant="2"/>
+                            <constraint id="26176" firstItem="16196" firstAttribute="centerY" secondItem="9415" secondAttribute="top" constant="247.5"/>
+                            <constraint id="26177" firstItem="16196" firstAttribute="centerX" secondItem="408" secondAttribute="centerX" constant="1.5"/>
+                            <constraint id="26178" firstItem="16196" firstAttribute="width" secondItem="408" secondAttribute="width" constant="-37"/>
+                            <constraint id="26180" firstItem="16196" firstAttribute="top" secondItem="9415" secondAttribute="bottom" constant="8"/>
+                            <constraint id="26181" firstItem="16196" firstAttribute="width" secondItem="9415" secondAttribute="width" constant="240"/>
+                            <constraint id="26182" firstItem="16196" firstAttribute="height" secondItem="9415" secondAttribute="height" constant="95"/>
+                            <constraint id="26183" firstItem="16197" firstAttribute="centerY" secondItem="9415" secondAttribute="bottom" constant="119"/>
+                            <constraint id="26184" firstItem="16197" firstAttribute="centerX" secondItem="408" secondAttribute="centerX"/>
+                            <constraint id="26188" firstItem="8104" firstAttribute="width" secondItem="408" secondAttribute="width"/>
+                            <constraint id="26189" firstItem="8104" firstAttribute="height" secondItem="16196" secondAttribute="height"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="26073"/>
+                                <include reference="26074"/>
+                                <include reference="26081"/>
+                                <include reference="26083"/>
+                                <include reference="26079"/>
+                                <include reference="26080"/>
+                                <include reference="26084"/>
+                                <include reference="26085"/>
+                                <include reference="26183"/>
+                                <include reference="26184"/>
+                                <include reference="26177"/>
+                                <include reference="26180"/>
+                                <include reference="26181"/>
+                                <include reference="26182"/>
+                                <include reference="26188"/>
+                                <include reference="26189"/>
+                            </mask>
+                        </variation>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="26073"/>
+                                <exclude reference="26074"/>
+                                <exclude reference="26081"/>
+                                <exclude reference="26083"/>
+                                <exclude reference="26079"/>
+                                <exclude reference="26080"/>
+                                <exclude reference="26084"/>
+                                <exclude reference="26085"/>
+                                <exclude reference="26183"/>
+                                <exclude reference="26184"/>
+                                <exclude reference="26177"/>
+                                <exclude reference="26180"/>
+                                <exclude reference="26181"/>
+                                <exclude reference="26182"/>
+                                <exclude reference="26188"/>
+                                <exclude reference="26189"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Men" id="1809"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

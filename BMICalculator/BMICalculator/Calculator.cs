@@ -25,7 +25,7 @@ namespace BMICalculator
                 Message = "Your BMI Score is " + BMIScore.ToString();
             }
             else
-                Message = "You must enter your height and weight";
+                Message = "Enter your height and weight";
 
             return Message;
         }
