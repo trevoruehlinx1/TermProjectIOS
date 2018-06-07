@@ -11,6 +11,8 @@ namespace BMICalculator
         }
         public override void ViewDidLoad()
         {
+            ShouldAutorotate();
+            GetSupportedInterfaceOrientations();
             Calculator calculator = new Calculator();
             FemaleBMIOutputLabel.Text = calculator.GetBMIScore();
             ExtraMessageOutputLabel.Text = calculator.GetExtraMessage();
@@ -19,13 +21,19 @@ namespace BMICalculator
 
         public override void ViewDidAppear(bool animated)
         {
+            ((AppDelegate)(UIApplication.SharedApplication.Delegate)).disableAllOrientation = true;
             Calculator calculator = new Calculator();
             FemaleBMIOutputLabel.Text = calculator.GetBMIScore();
             ExtraMessageOutputLabel.Text = calculator.GetExtraMessage();
             base.ViewDidAppear(animated);
         }
+		public override void ViewDidDisappear(bool animated)
+		{
+            ((AppDelegate)(UIApplication.SharedApplication.Delegate)).disableAllOrientation = true;
+			base.ViewDidDisappear(animated);
+		}
 
-        partial void FemaleChartButton_TouchUpInside(UIButton sender)
+		partial void FemaleChartButton_TouchUpInside(UIButton sender)
         {
             string url = "http://i0.wp.com/dietdatabase.com/wp-content/uploads/2016/05/ideal-weight-women.jpg";
             UIApplication.SharedApplication.OpenUrl(new NSUrl(url));

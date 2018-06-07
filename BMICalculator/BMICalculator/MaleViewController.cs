@@ -12,6 +12,7 @@ namespace BMICalculator
 
         public override void ViewDidLoad()
         {
+            ((AppDelegate)(UIApplication.SharedApplication.Delegate)).disableAllOrientation = true;
             Calculator calculator = new Calculator();
             MaleBMIOutputLabel.Text = calculator.GetBMIScore();
             ExtraMessageOutputLabel.Text = calculator.GetExtraMessage();
@@ -20,6 +21,7 @@ namespace BMICalculator
 
 		public override void ViewDidAppear(bool animated)
 		{
+            ((AppDelegate)(UIApplication.SharedApplication.Delegate)).disableAllOrientation = true;
             Calculator calculator = new Calculator();
             MaleBMIOutputLabel.Text = calculator.GetBMIScore();
             ExtraMessageOutputLabel.Text = calculator.GetExtraMessage();

@@ -11,6 +11,8 @@ namespace BMICalculator
         }
         public override void ViewDidLoad()
         {
+            ((AppDelegate)(UIApplication.SharedApplication.Delegate)).disableAllOrientation = false;
+
             if (CityPicker != null)
             {
                 CityPicker.Model = new CityPickerModel(cityTextField);
@@ -18,8 +20,13 @@ namespace BMICalculator
             base.ViewDidLoad();
             // Perform any additional setup after loading the view, typically from a nib.
         }
+		public override void ViewDidAppear(bool animated)
+		{
+            ((AppDelegate)(UIApplication.SharedApplication.Delegate)).disableAllOrientation = false;
+			base.ViewDidAppear(animated);
+		}
 
-        partial void CityValueChanged(UITextField sender)
+		partial void CityValueChanged(UITextField sender)
         {
             string cityNametext = cityTextField.Text;
             ((AppDelegate)(UIApplication.SharedApplication.Delegate)).cityName = cityNametext;

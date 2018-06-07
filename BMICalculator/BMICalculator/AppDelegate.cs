@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using System;
+using Foundation;
 using UIKit;
 
 namespace BMICalculator
@@ -12,6 +13,7 @@ namespace BMICalculator
         public string cityName { get; set; }
         public int weight {get;set;}
         public int height {get;set;}
+        public bool disableAllOrientation = false;
 
         public override UIWindow Window
         {
@@ -56,6 +58,14 @@ namespace BMICalculator
         public override void WillTerminate(UIApplication application)
         {
             // Called when the application is about to terminate. Save data, if needed. See also DidEnterBackground.
+        }
+        public override UIInterfaceOrientationMask GetSupportedInterfaceOrientations(UIApplication application, UIWindow forWindow)
+        {
+            if (disableAllOrientation == true)
+            {
+                return UIInterfaceOrientationMask.Portrait;
+            }
+            return UIInterfaceOrientationMask.All;
         }
     }
 }
