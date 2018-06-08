@@ -23,6 +23,10 @@ namespace BMICalculator
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton settingsButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UISlider WeightSlider { get; set; }
 
         [Outlet]
@@ -32,6 +36,10 @@ namespace BMICalculator
         [Action ("HeightSliderValueChanged:")]
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void HeightSliderValueChanged (UIKit.UISlider sender);
+
+        [Action ("SettingsButton_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void SettingsButton_TouchUpInside (UIKit.UIButton sender);
 
         [Action ("WeightSliderValueChanged:")]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -47,6 +55,11 @@ namespace BMICalculator
             if (HeightSliderOutputLabel != null) {
                 HeightSliderOutputLabel.Dispose ();
                 HeightSliderOutputLabel = null;
+            }
+
+            if (settingsButton != null) {
+                settingsButton.Dispose ();
+                settingsButton = null;
             }
 
             if (WeightSlider != null) {

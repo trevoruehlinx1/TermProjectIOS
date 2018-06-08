@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Height Slider Default Setting</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSSliderSpecifier</string>
+			<key>MaximumValue</key>
+			<integer>84</integer>
+			<key>MinimumValue</key>
+			<integer>36</integer>
+			<key>Key</key>
+			<string>heightSlider</string>
+			<key>DefaultValue</key>
+			<real>60</real>
+			<key>Title</key>
+			<string>Height Slider</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Weight slider default setting</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSSliderSpecifier</string>
+			<key>MaximumValue</key>
+			<integer>350</integer>
+			<key>MinimumValue</key>
+			<integer>1</integer>
+			<key>Key</key>
+			<string>weightSlider</string>
+			<key>DefaultValue</key>
+			<string>175</string>
+			<key>Title</key>
+			<string>Weight Slider</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Background Color</string>
+			<key>Titles</key>
+			<array>
+				<string>white</string>
+				<string>blue</string>
+				<string>lightGrey</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>white</string>
+				<string>blue</string>
+				<string>lightGrey</string>
+			</array>
+			<key>Key</key>
+			<string>BGColor</string>
+			<key>DefaultValue</key>
+			<string>white</string>
+		</dict>
+	</array>
+</dict>
+</plist>

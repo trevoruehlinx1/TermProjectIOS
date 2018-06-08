@@ -21,8 +21,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2718" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="4" usesAttributedText="YES">
-                                <rect key="frame" x="98" y="320.5" width="179.5" height="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2718" translatesAutoresizingMaskIntoConstraints="NO" numberOfLines="4" usesAttributedText="YES" misplaced="YES">
+                                <rect key="frame" x="316.5" y="320.5" width="179.5" height="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <attributedString key="attributedText">
@@ -34,18 +34,18 @@
                                     </fragment>
                                 </attributedString>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2719" translatesAutoresizingMaskIntoConstraints="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES" image="stethascop.jpeg">
-                                <rect key="frame" x="39.5" y="56" width="300" height="168"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2719" translatesAutoresizingMaskIntoConstraints="NO" adjustsImageSizeForAccessibilityContentSizeCategory="YES" image="stethascop.jpeg" misplaced="YES">
+                                <rect key="frame" x="256" y="56" width="300" height="168"/>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="175" minValue="0" maxValue="350" id="4162" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="0.0" y="444" width="379" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="175" minValue="0" maxValue="350" id="4162" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="-2" y="444" width="816" height="31"/>
                                 <connections>
                                     <action selector="WeightSliderValueChanged:" destination="244" id="4165" eventType="editingChanged"/>
                                     <action selector="WeightSliderValueChanged:" destination="244" id="4778" eventType="valueChanged"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4163" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
-                                <rect key="frame" x="162.5" y="404.5" width="56.5" height="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4163" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" misplaced="YES">
+                                <rect key="frame" x="115" y="404.5" width="56.5" height="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <attributedString key="attributedText">
@@ -57,8 +57,8 @@
                                     </fragment>
                                 </attributedString>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4164" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
-                                <rect key="frame" x="184.5" y="488" width="12" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4164" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" misplaced="YES">
+                                <rect key="frame" x="137" y="488" width="12" height="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <attributedString key="attributedText">
@@ -70,8 +70,8 @@
                                     </fragment>
                                 </attributedString>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5813" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
-                                <rect key="frame" x="164" y="532.5" width="53" height="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5813" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" misplaced="YES">
+                                <rect key="frame" x="651.5" y="532.5" width="53" height="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <attributedString key="attributedText">
@@ -83,16 +83,16 @@
                                     </fragment>
                                 </attributedString>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="36" maxValue="84" id="5814" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="1" y="565" width="379" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="36" maxValue="84" id="5814" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="-2" y="565" width="816" height="31"/>
                                 <connections>
                                     <action selector="WeightSliderValueChanged:" destination="5816" id="5815" eventType="editingChanged"/>
                                     <action selector="WeightSliderValueChanged:" destination="5816" id="5817" eventType="valueChanged"/>
                                     <action selector="HeightSliderValueChanged:" destination="244" id="5819" eventType="valueChanged"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5818" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES">
-                                <rect key="frame" x="184.5" y="616" width="12" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5818" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" misplaced="YES">
+                                <rect key="frame" x="672" y="616" width="12" height="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <attributedString key="attributedText">
@@ -104,6 +104,14 @@
                                     </fragment>
                                 </attributedString>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="26572" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="168.5" y="664.5" width="44" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <action selector="SettingsButton_TouchUpInside:" destination="244" id="26963" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint id="21677" firstItem="2719" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="2"/>
@@ -142,6 +150,8 @@
                             <constraint id="24707" firstItem="5814" firstAttribute="centerX" secondItem="245" secondAttribute="centerX"/>
                             <constraint id="24710" firstItem="245" firstAttribute="bottom" secondItem="5814" secondAttribute="bottom" constant="72"/>
                             <constraint id="24712" firstItem="5814" firstAttribute="width" secondItem="245" secondAttribute="width"/>
+                            <constraint id="26573" firstItem="26572" firstAttribute="centerY" secondItem="2718" secondAttribute="bottom" constant="338"/>
+                            <constraint id="26574" firstItem="26572" firstAttribute="centerX" secondItem="245" secondAttribute="centerX" constant="3"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -181,6 +191,8 @@
                                 <exclude reference="24710"/>
                                 <exclude reference="24712"/>
                                 <exclude reference="23715"/>
+                                <exclude reference="26573"/>
+                                <exclude reference="26574"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -203,6 +215,8 @@
                                 <include reference="24039"/>
                                 <include reference="24040"/>
                                 <include reference="24042"/>
+                                <include reference="26573"/>
+                                <include reference="26574"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -242,6 +256,7 @@
                         <outlet property="weightSliderOutputLabel" destination="4164" id="name-outlet-4164"/>
                         <outlet property="HeightSlider" destination="5814" id="name-outlet-5814"/>
                         <outlet property="HeightSliderOutputLabel" destination="5818" id="name-outlet-5818"/>
+                        <outlet property="settingsButton" destination="26572" id="name-outlet-26572"/>
                     </connections>
                     <tabBarItem key="tabBarItem" id="1461" title="Home"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -262,14 +277,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8104" translatesAutoresizingMaskIntoConstraints="NO" image="maleBMIChart.jpg" misplaced="YES">
-                                <rect key="frame" x="16" y="510" width="347" height="231"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8104" translatesAutoresizingMaskIntoConstraints="NO" image="maleBMIChart.jpg">
+                                <rect key="frame" x="2" y="513.5" width="375" height="223"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9415" translatesAutoresizingMaskIntoConstraints="NO" image="MAN2.png">
-                                <rect key="frame" x="140" y="36" width="98" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9415" translatesAutoresizingMaskIntoConstraints="NO" image="MAN2.png" misplaced="YES">
+                                <rect key="frame" x="140" y="36" width="445" height="585"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10719" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" numberOfLines="2" misplaced="YES">
-                                <rect key="frame" x="41" y="413" width="302" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10719" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" numberOfLines="2">
+                                <rect key="frame" x="186" y="413" width="11.5" height="22.5"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <attributedString key="attributedText">
@@ -281,8 +296,8 @@
                                     </fragment>
                                 </attributedString>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="15251" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" numberOfLines="2" misplaced="YES">
-                                <rect key="frame" x="93" y="462" width="198" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="15251" translatesAutoresizingMaskIntoConstraints="NO" usesAttributedText="YES" numberOfLines="2">
+                                <rect key="frame" x="172" y="463.5" width="39" height="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <attributedString key="attributedText">
@@ -294,11 +309,11 @@
                                     </fragment>
                                 </attributedString>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="16196" translatesAutoresizingMaskIntoConstraints="NO" image="MaleChart2.jpg">
-                                <rect key="frame" x="20" y="172" width="338" height="223"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="16196" translatesAutoresizingMaskIntoConstraints="NO" image="MaleChart2.jpg" misplaced="YES">
+                                <rect key="frame" x="20" y="172" width="775" height="415"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="16197" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                <rect key="frame" x="18" y="172" width="338" height="223"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="16197" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="172.5" y="268" width="30" height="30"/>
                                 <connections>
                                     <action selector="MaleChartImageButton_TouchUpInside:" destination="16199" id="16198" eventType="touchUpInside"/>
                                     <action selector="Chart2Button_TouchUpInside:" destination="407" id="16472" eventType="touchUpInside"/>
