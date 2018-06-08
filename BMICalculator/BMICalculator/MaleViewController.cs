@@ -13,23 +13,23 @@ namespace BMICalculator
 
         public override void ViewDidLoad()
         {
-            RefreshFields();
             ((AppDelegate)(UIApplication.SharedApplication.Delegate)).disableAllOrientation = true;
             Calculator calculator = new Calculator();
             MaleBMIOutputLabel.Text = calculator.GetBMIScore();
             ExtraMessageOutputLabel.Text = calculator.GetExtraMessage();
+            RefreshFields();
             base.ViewDidLoad();
         }
 
 		public override void ViewDidAppear(bool animated)
 		{
-            RefreshFields();
             var app = UIApplication.SharedApplication;
             observer = NSNotificationCenter.DefaultCenter.AddObserver(aName: UIApplication.WillEnterForegroundNotification, notify: ApplicationWillEnterForeground, fromObject: app);
             ((AppDelegate)(UIApplication.SharedApplication.Delegate)).disableAllOrientation = true;
             Calculator calculator = new Calculator();
             MaleBMIOutputLabel.Text = calculator.GetBMIScore();
             ExtraMessageOutputLabel.Text = calculator.GetExtraMessage();
+            RefreshFields();
 			base.ViewDidAppear(animated);
 		}
 
@@ -48,6 +48,13 @@ namespace BMICalculator
         {
             NSUserDefaults defaults = NSUserDefaults.StandardUserDefaults;
             string color = defaults.StringForKey(Constants.BG_COLOR);
+            bool commentStatus = defaults.BoolForKey(Constants.STATUS_COMMENT);
+
+            if (commentStatus == true)
+            {
+                ExtraMessageOutputLabel.Text = "";
+            }
+
 
             if (color == "lightGrey")
                 View.BackgroundColor = UIColor.LightGray;

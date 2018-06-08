@@ -1,8 +1,6 @@
 ﻿<Properties StartupConfiguration="{5AD71898-4F08-48E0-93BA-1DC28F24E9DC}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="BMICalculator/Settings.bundle/Root.plist">
     <Files>
-      <File FileName="BMICalculator/ViewController.cs" Line="24" Column="29" />
-      <File FileName="BMICalculator/Main.storyboard" />
       <File FileName="BMICalculator/Settings.bundle/Root.plist" />
     </Files>
   </MonoDevelop.Ide.Workbench>

@@ -66,6 +66,16 @@
 			<key>DefaultValue</key>
 			<string>white</string>
 		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Turn off status comment</string>
+			<key>Key</key>
+			<string>statusComment</string>
+			<key>DefaultValue</key>
+			<string>on</string>
+		</dict>
 	</array>
 </dict>
 </plist>
