@@ -51,7 +51,9 @@ namespace BMICalculator
         {
             NSUserDefaults defaults = NSUserDefaults.StandardUserDefaults;
             HeightSlider.Value = defaults.FloatForKey(Constants.HEIGHT_SLIDER);
+            HeightSliderValueChanged(HeightSlider);
             WeightSlider.Value = defaults.FloatForKey(Constants.WEIGHT_SLIDER);
+            WeightSliderValueChanged(WeightSlider);
             string color = defaults.StringForKey(Constants.BG_COLOR);
 
             if (color == "lightGrey")

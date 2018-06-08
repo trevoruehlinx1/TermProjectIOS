@@ -50,7 +50,7 @@ namespace BMICalculator
             string color = defaults.StringForKey(Constants.BG_COLOR);
             bool commentStatus = defaults.BoolForKey(Constants.STATUS_COMMENT);
 
-            if (commentStatus == true)
+            if (commentStatus == false)
             {
                 ExtraMessageOutputLabel.Text = "";
             }

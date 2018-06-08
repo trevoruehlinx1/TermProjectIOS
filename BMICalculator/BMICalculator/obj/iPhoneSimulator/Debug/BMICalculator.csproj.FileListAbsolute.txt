@@ -14,3 +14,4 @@
 /Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/BMICalculator.csproj.CoreCompileInputs.cache
 /Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/BMICalculator.exe
 /Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/BMICalculator.pdb
+/Users/student/Desktop/tu/TermProjectIOS/BMICalculator/BMICalculator/obj/iPhoneSimulator/Debug/BMICalculator.csprojResolveAssemblyReference.cache

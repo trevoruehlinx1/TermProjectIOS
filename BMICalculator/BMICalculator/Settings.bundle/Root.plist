@@ -8,6 +8,26 @@
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>Title</key>
+			<string>Weight slider default setting</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSSliderSpecifier</string>
+			<key>MaximumValue</key>
+			<integer>350</integer>
+			<key>MinimumValue</key>
+			<integer>0</integer>
+			<key>Key</key>
+			<string>weightSlider</string>
+			<key>Title</key>
+			<string>Weight Slider</string>
+			<key>DefaultValue</key>
+			<integer>175</integer>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
 			<string>Height Slider Default Setting</string>
 		</dict>
 		<dict>
@@ -19,30 +39,10 @@
 			<integer>36</integer>
 			<key>Key</key>
 			<string>heightSlider</string>
-			<key>DefaultValue</key>
-			<real>60</real>
 			<key>Title</key>
 			<string>Height Slider</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-			<key>Title</key>
-			<string>Weight slider default setting</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSSliderSpecifier</string>
-			<key>MaximumValue</key>
-			<integer>350</integer>
-			<key>MinimumValue</key>
-			<integer>1</integer>
-			<key>Key</key>
-			<string>weightSlider</string>
 			<key>DefaultValue</key>
-			<string>175</string>
-			<key>Title</key>
-			<string>Weight Slider</string>
+			<integer>60</integer>
 		</dict>
 		<dict>
 			<key>Type</key>
@@ -70,7 +70,7 @@
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 			<key>Title</key>
-			<string>Turn off status comment</string>
+			<string>Obesity Status Comment</string>
 			<key>Key</key>
 			<string>statusComment</string>
 			<key>DefaultValue</key>
