@@ -12,11 +12,13 @@ namespace BMICalculator
         }
 		public override void ViewDidLoad()
 		{
+            ((AppDelegate)(UIApplication.SharedApplication.Delegate)).disableAllOrientation = true;
             RefreshFields();
 			base.ViewDidLoad();
 		}
 		public override void ViewDidAppear(bool animated)
 		{
+            ((AppDelegate)(UIApplication.SharedApplication.Delegate)).disableAllOrientation = true;
             RefreshFields();
             var app = UIApplication.SharedApplication;
             observer = NSNotificationCenter.DefaultCenter.AddObserver(aName: UIApplication.WillEnterForegroundNotification, notify: ApplicationWillEnterForeground, fromObject: app);
